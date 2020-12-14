@@ -8,7 +8,7 @@ int main(void){
 	while (size > 0){
 		scanf("%f", &score[i]);
 		--size;
-		i++
+		i++;
 	}
 	for(i = 0; i < n; i++){
 		printf("%f\n", score[i]);
