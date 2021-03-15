@@ -11,7 +11,11 @@ int main(void){
 	scanf ("%d", &n);
 	printf("Total number of student = %d\n" , n);
 	for(i =0; i < n; i++){
-		scanf("&d\n", &score[i]);
+		scanf("&f", &score[i]);
+		while(scan[i]<0){
+			printf("Number less than zero");
+			scanf("%f", &score[i]);
+		}
 	}
 	printf("Average = %.2f", avg());
 	printf("max = %.2f", max());
